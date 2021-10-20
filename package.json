@@ -28,7 +28,13 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
-    "json-server": "json-server __json_server_mock__/db.json --watch"
+    "json-server": "json-server __json_server_mock__/db.json --watch",
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +57,8 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.14.5",
+    "@commitlint/cz-commitlint": "^13.2.1",
+    "commitizen": "^4.2.4",
     "customize-cra": "^1.0.0",
     "eslint-config-prettier": "^8.3.0",
     "husky": ">=6",
@@ -66,7 +74,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-stagd",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -e HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
