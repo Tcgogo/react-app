@@ -3565,6 +3565,21 @@ check-types@^11.1.1:
   resolved "https://registry.npmjs.org/check-types/-/check-types-11.1.2.tgz"
   integrity sha512-tzWzvgePgLORb9/3a0YenggReLKAIb2owL03H2Xdoe5pKcUyWRSEQ8xfCar8t2SIAuEDwtmx2da1YB52YuHQMQ==
 
+"chokidar@>=3.0.0 <4.0.0", chokidar@^3.4.2:
+  version "3.5.2"
+  resolved "https://registry.nlark.com/chokidar/download/chokidar-3.5.2.tgz?cache=0&sync_timestamp=1623763535523&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fchokidar%2Fdownload%2Fchokidar-3.5.2.tgz#dba3976fcadb016f66fd365021d91600d01c1e75"
+  integrity sha1-26OXb8rbAW9m/TZQIdkWANAcHnU=
+  dependencies:
+    anymatch "~3.1.2"
+    braces "~3.0.2"
+    glob-parent "~5.1.2"
+    is-binary-path "~2.1.0"
+    is-glob "~4.0.1"
+    normalize-path "~3.0.0"
+    readdirp "~3.6.0"
+  optionalDependencies:
+    fsevents "~2.3.2"
+
 chokidar@^2.1.8:
   version "2.1.8"
   resolved "https://registry.npmjs.org/chokidar/-/chokidar-2.1.8.tgz"
@@ -3598,21 +3613,6 @@ chokidar@^3.4.1:
     readdirp "~3.5.0"
   optionalDependencies:
     fsevents "~2.3.1"
-
-chokidar@^3.4.2:
-  version "3.5.2"
-  resolved "https://registry.nlark.com/chokidar/download/chokidar-3.5.2.tgz?cache=0&sync_timestamp=1623763535523&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fchokidar%2Fdownload%2Fchokidar-3.5.2.tgz#dba3976fcadb016f66fd365021d91600d01c1e75"
-  integrity sha1-26OXb8rbAW9m/TZQIdkWANAcHnU=
-  dependencies:
-    anymatch "~3.1.2"
-    braces "~3.0.2"
-    glob-parent "~5.1.2"
-    is-binary-path "~2.1.0"
-    is-glob "~4.0.1"
-    normalize-path "~3.0.0"
-    readdirp "~3.6.0"
-  optionalDependencies:
-    fsevents "~2.3.2"
 
 chownr@^1.1.1:
   version "1.1.4"
@@ -11338,6 +11338,11 @@ sanitize.css@^10.0.0:
   resolved "https://registry.npmjs.org/sanitize.css/-/sanitize.css-10.0.0.tgz"
   integrity sha512-vTxrZz4dX5W86M6oVWVdOVe72ZiPs41Oi7Z6Km4W5Turyz28mrXSJhhEBZoRtzJWIv3833WKVwLSDWWkEfupMg==
 
+sass-dart@^1.0.0-alpha.1:
+  version "1.0.0-alpha.1"
+  resolved "https://registry.npmmirror.com/sass-dart/download/sass-dart-1.0.0-alpha.1.tgz#a3f900fa2a69d30e15320103d43e31406bce3410"
+  integrity sha1-o/kA+ipp0w4VMgED1D4xQGvONBA=
+
 sass-loader@^10.0.5:
   version "10.1.1"
   resolved "https://registry.npmjs.org/sass-loader/-/sass-loader-10.1.1.tgz"
@@ -11348,6 +11353,21 @@ sass-loader@^10.0.5:
     neo-async "^2.6.2"
     schema-utils "^3.0.0"
     semver "^7.3.2"
+
+sass-loader@^12.2.0:
+  version "12.2.0"
+  resolved "https://registry.npmmirror.com/sass-loader/download/sass-loader-12.2.0.tgz?cache=0&sync_timestamp=1634035952677&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fsass-loader%2Fdownload%2Fsass-loader-12.2.0.tgz#b370010fb0ababae2ef9c6c89e05d6c6debc6042"
+  integrity sha1-s3ABD7Crq64u+cbIngXWxt68YEI=
+  dependencies:
+    klona "^2.0.4"
+    neo-async "^2.6.2"
+
+sass@^1.43.2:
+  version "1.43.2"
+  resolved "https://registry.npmmirror.com/sass/download/sass-1.43.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fsass%2Fdownload%2Fsass-1.43.2.tgz#c02501520c624ad6622529a8b3724eb08da82d65"
+  integrity sha1-wCUBUgxiStZiJSmos3JOsI2oLWU=
+  dependencies:
+    chokidar ">=3.0.0 <4.0.0"
 
 sax@~1.2.4:
   version "1.2.4"

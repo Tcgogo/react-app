@@ -1,0 +1,52 @@
+.flex {
+  display: flex;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 50%;
+}
+.flex-3 {
+  flex: 33.3333%;
+}
+.flex-4 {
+  flex: 25%;
+}
+
+.flex-column {
+  @extend .flex;
+  flex-direction: column;
+}
+.flex-jc {
+  @extend .flex;
+  justify-content: center;
+}
+
+.flex-ac {
+  @extend .flex;
+  align-items: center;
+}
+
+.flex-ae {
+  @extend .flex;
+  align-items: flex-end;
+}
+.flex-je {
+  @extend .flex;
+  justify-content: flex-end;
+}
+
+.flex-jsb {
+  @extend .flex;
+  justify-content: space-between;
+}
+.flex-jsa {
+  @extend .flex;
+  justify-content: space-around;
+}
+
+.flex-jc-ac {
+  @extend .flex-jc;
+  @extend .flex-ac;
+}

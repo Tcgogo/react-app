@@ -1,0 +1,13 @@
+@import './color.scss';
+@import '../var.scss';
+@import '../common/index.scss';
+
+.theme-qinglan {
+  @include app-main();
+  @include app-tags();
+  @include nprogress();
+  @include app-header();
+  @include sc-font();
+  @include sc-bg();
+  @include sc-color();
+}

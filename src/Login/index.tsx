@@ -24,7 +24,7 @@ const Login = () => {
   };
 
   return (
-    <form onSubmit={onsubmit}>
+    <form onSubmit={onsubmit} >
       <div>
         <button type={"button"} onClick={() => handleChange(1)}>
           登陆

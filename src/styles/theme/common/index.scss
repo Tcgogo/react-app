@@ -1,0 +1,393 @@
+
+@mixin nprogress {
+  #nprogress .bar {
+    background: $--color-primary;
+  }
+
+  #nprogress .peg {
+    box-shadow: 0 0 10px $--color-primary, 0 0 5px $--color-primary;
+  }
+
+  #nprogress .spinner-icon {
+    border-top-color: $--color-primary;
+    border-left-color: $--color-primary;
+  }
+}
+
+@mixin app-tags {
+  .app-tags {
+    .scroll-container {
+      .tags-view-item {
+        &.active {
+          color: $--color-primary;
+
+          &::before {
+            background: $--color-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin app-header {
+  $back: mix($--color-black, $--color-primary, 10%) !default;
+
+  .app-header {
+    background: $--color-primary;
+
+    .app-header-menu {
+      background: transparent;
+    }
+
+    .el-menu--horizontal>.el-menu-item.is-active {
+      background: $back;
+    }
+
+    .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover,
+    .el-menu--horizontal>.el-menu-item:not(.is-disabled):focus {
+      background: $back;
+    }
+
+    .el-menu--horizontal .el-menu-item:not(.is-disabled):hover,
+    .el-menu--horizontal .el-menu-item:not(.is-disabled):focus {
+      color: #fff;
+    }
+
+    .header-tags_bars {
+      &:hover {
+        background: $back;
+      }
+    }
+
+    .header-menu {
+      background: $back;
+    }
+
+    .header-user {
+      &:focus {
+        background: $back;
+      }
+    }
+  }
+}
+
+@mixin app-main {
+  .sc-table {
+    &_errmsg {
+      position: absolute;
+      top: 1px;
+      right: 12px;
+      height: 100%;
+      text-align: center;
+      transition: all 0.3s;
+
+      &_tooltip {
+        &.is-dark {
+          font-size: 14px;
+          color: #fff;
+          background: $--color-danger;
+        }
+      }
+    }
+  }
+}
+
+@mixin sc-color {
+  --primary: #{$--color-primary};
+  --white: #{$--color-white};
+  --black: #{$--color-black};
+  --primary-light-1: #{$--color-primary-light-1};
+  --primary-light-2: #{$--color-primary-light-2};
+  --primary-light-3: #{$--color-primary-light-3};
+  --primary-light-4: #{$--color-primary-light-4};
+  --primary-light-5: #{$--color-primary-light-5};
+  --primary-light-6: #{$--color-primary-light-6};
+  --primary-light-7: #{$--color-primary-light-7};
+  --primary-light-8: #{$--color-primary-light-8};
+  --primary-light-9: #{$--color-primary-light-9};
+  --success: #{$--color-success};
+  --warning: #{$--color-warning};
+  --danger: #{$--color-danger};
+  --info: #{$--color-info};
+  --success-light: #{$--color-success-light};
+  --warning-light: #{$--color-warning-light};
+  --danger-light: #{$--color-danger-light};
+  --info-light: #{$--color-info-light};
+  --success-lighter: #{$--color-success-lighter};
+  --warning-lighter: #{$--color-warning-lighter};
+  --danger-lighter: #{$--color-danger-lighter};
+  --info-lighter: #{$--color-info-lighter};
+  --text-primary: #{$--color-text-primary};
+  --text-regular: #{$--color-text-regular};
+  --text-secondary: #{$--color-text-secondary};
+  --text-placeholder: #{$--color-text-placeholder};
+  --border-color-base: #{$--border-color-base};
+  --border-color-light: #{$--border-color-light};
+  --border-color-lighter: #{$--border-color-lighter};
+  --border-color-extra-light: #{$--border-color-extra-light};
+}
+
+@mixin sc-font {
+  #app .sc-font {
+    &-white {
+      color: $--color-white;
+    }
+
+    &-black {
+      color: $--color-black;
+    }
+
+    &-primary {
+      color: $--color-primary;
+    }
+
+    &-primary-light-1 {
+      color: $--color-primary-light-1;
+    }
+
+    &-primary-light-2 {
+      color: $--color-primary-light-2;
+    }
+
+    &-primary-light-3 {
+      color: $--color-primary-light-3;
+    }
+
+    &-primary-light-4 {
+      color: $--color-primary-light-4;
+    }
+
+    &-primary-light-5 {
+      color: $--color-primary-light-5;
+    }
+
+    &-primary-light-6 {
+      color: $--color-primary-light-6;
+    }
+
+    &-primary-light-7 {
+      color: $--color-primary-light-7;
+    }
+
+    &-primary-light-8 {
+      color: $--color-primary-light-8;
+    }
+
+    &-primary-light-9 {
+      color: $--color-primary-light-9;
+    }
+
+    &-success {
+      color: $--color-success;
+    }
+
+    &-warning {
+      color: $--color-warning;
+    }
+
+    &-danger {
+      color: $--color-danger;
+    }
+
+    &-info {
+      color: $--color-info;
+    }
+
+    &-success-light {
+      color: $--color-success-light;
+    }
+
+    &-warning-light {
+      color: $--color-warning-light;
+    }
+
+    &-danger-light {
+      color: $--color-danger-light;
+    }
+
+    &-info-light {
+      color: $--color-info-light;
+    }
+
+    &-success-lighter {
+      color: $--color-success-lighter;
+    }
+
+    &-warning-lighter {
+      color: $--color-warning-lighter;
+    }
+
+    &-danger-lighter {
+      color: $--color-danger-lighter;
+    }
+
+    &-info-lighter {
+      color: $--color-info-lighter;
+    }
+
+    &-text-primary {
+      color: $--color-text-primary;
+    }
+
+    &-text-regular {
+      color: $--color-text-regular;
+    }
+
+    &-text-secondary {
+      color: $--color-text-secondary;
+    }
+
+    &-text-placeholder {
+      color: $--color-text-placeholder;
+    }
+
+    &-border-color-base {
+      color: $--border-color-base;
+    }
+
+    &-border-color-light {
+      color: $--border-color-light;
+    }
+
+    &-border-color-lighter {
+      color: $--border-color-lighter;
+    }
+
+    &-border-color-extra-light {
+      color: $--border-color-extra-light;
+    }
+  }
+}
+
+@mixin sc-bg {
+  #app .sc-bg {
+    &-white {
+      background: $--color-white;
+    }
+
+    &-black {
+      background: $--color-black;
+    }
+
+    &-primary {
+      background: $--color-primary;
+    }
+
+    &-primary-light-1 {
+      background: $--color-primary-light-1;
+    }
+
+    &-primary-light-2 {
+      background: $--color-primary-light-2;
+    }
+
+    &-primary-light-3 {
+      background: $--color-primary-light-3;
+    }
+
+    &-primary-light-4 {
+      background: $--color-primary-light-4;
+    }
+
+    &-primary-light-5 {
+      background: $--color-primary-light-5;
+    }
+
+    &-primary-light-6 {
+      background: $--color-primary-light-6;
+    }
+
+    &-primary-light-7 {
+      background: $--color-primary-light-7;
+    }
+
+    &-primary-light-8 {
+      background: $--color-primary-light-8;
+    }
+
+    &-primary-light-9 {
+      background: $--color-primary-light-9;
+    }
+
+    &-success {
+      background: $--color-success;
+    }
+
+    &-warning {
+      background: $--color-warning;
+    }
+
+    &-danger {
+      background: $--color-danger;
+    }
+
+    &-info {
+      background: $--color-info;
+    }
+
+    &-success-light {
+      background: $--color-success-light;
+    }
+
+    &-warning-light {
+      background: $--color-warning-light;
+    }
+
+    &-danger-light {
+      background: $--color-danger-light;
+    }
+
+    &-info-light {
+      background: $--color-info-light;
+    }
+
+    &-success-lighter {
+      background: $--color-success-lighter;
+    }
+
+    &-warning-lighter {
+      background: $--color-warning-lighter;
+    }
+
+    &-danger-lighter {
+      background: $--color-danger-lighter;
+    }
+
+    &-info-lighter {
+      background: $--color-info-lighter;
+    }
+
+    &-text-primary {
+      background: $--color-text-primary;
+    }
+
+    &-text-regular {
+      background: $--color-text-regular;
+    }
+
+    &-text-secondary {
+      background: $--color-text-secondary;
+    }
+
+    &-text-placeholder {
+      background: $--color-text-placeholder;
+    }
+
+    &-border-color-base {
+      background: $--border-color-base;
+    }
+
+    &-border-color-light {
+      background: $--border-color-light;
+    }
+
+    &-border-color-lighter {
+      background: $--border-color-lighter;
+    }
+
+    &-border-color-extra-light {
+      background: $--border-color-extra-light;
+    }
+  }
+}

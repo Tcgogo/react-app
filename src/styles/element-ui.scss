@@ -1,0 +1,55 @@
+//覆盖一些element-ui样式
+.app-wrapper {
+  .el-table {
+    .cell {
+      .el-link + .el-link,
+      .el-link + .el-button,
+      .el-button + .el-link {
+        margin-left: 10px;
+      }
+    }
+    .cell .el-button--mini {
+      padding: 5px 7px;
+    }
+    td {
+      padding: 8px 0;
+    }
+    .caret-wrapper {
+      height: 20px;
+      .sort-caret.descending {
+        bottom: -1px;
+      }
+      .sort-caret.ascending {
+        top: -1px;
+      }
+    }
+  }
+
+  .el-button {
+    &.el-button--mini {
+      &.iconfont,
+      .iconfont {
+        font-size: 12px;
+      }
+    }
+    &.iconfont,
+    .iconfont {
+      font-size: 14px;
+    }
+  }
+}
+.sc-tree_btn {
+  height: 32px;
+  padding: 0;
+  background: #fff;
+  border: none;
+  color: #606266;
+  border: 1px solid #dcdfe6;
+}
+// .el-input.el-input--small .el-input__inner {
+//   height: 32px !important;
+// }
+
+.el-table th{
+background-color: $--background-color-base;
+}
