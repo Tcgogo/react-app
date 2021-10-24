@@ -1,13 +1,12 @@
 import React from "react";
-import Home from "./Login";
+import Unauthorized from "./Unauthorized-App";
+import Authorized from "./Authorized-App";
 import "./App.css";
+import { useAuth } from "context/auth-context";
 
 function App() {
-  return (
-    <div className="App">
-      <Home></Home>
-    </div>
-  );
+  const { user } = useAuth();
+  return <div className="App">{user ? <Authorized /> : <Unauthorized />}</div>;
 }
 
 export default App;
