@@ -2,7 +2,13 @@ import { useAuth } from "context/auth-context";
 import React from "react";
 
 const Home = () => {
-  return <div>首页</div>;
+  const { logout } = useAuth();
+  return (
+    <div>
+      首页
+      <button onClick={() => logout}>登出</button>
+    </div>
+  );
 };
 
 export default Home;
